@@ -17,8 +17,8 @@ export const site: SiteConfig = {
       }
     ]
   },
-  description: 'personal space',
-  domain: import.meta.env.URARA_SITE_DOMAIN ?? 'littlezhaidi.me',
+  description: 'AI太好用了你們知道嗎 - 紅風',
+  domain: import.meta.env.URARA_SITE_DOMAIN ?? 'blog.littlezhaidi.me',
   lang: 'zh-TW',
   protocol: import.meta.env.URARA_SITE_PROTOCOL ?? import.meta.env.DEV ? 'http://' : 'https://',
   //subtitle: '',
