@@ -16,6 +16,7 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+._*
 
 # temp file
 src/routes/**/+page.svelte.md
