@@ -3,7 +3,9 @@ title: 代理伺服器架設
 summary: 自從伺服器架好之後，我就在想能不能搞個永久固定IP的服...
 created: 2025-07-22
 publish: 2025-11-07
-tags: ['mc server']
+tags: 
+  - 'mc server'
+  - 'Linux'
 ---
 
 自從伺服器架好之後，我就在想能不能搞個永久固定IP的服

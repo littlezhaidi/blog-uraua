@@ -1,5 +1,6 @@
 ---
 title: 搞個域名來玩玩
+summary: 其實也是github student dev pack的一部分...
 created: 2025-08-08
 updated: 2025-11-08
 publish: 2025-11-08
@@ -45,8 +46,8 @@ CNAME是```網域名稱```對應的```網域名稱```
 ### 我的設定
 
 其實有個自動設定的選項，他的文章沒講到  
-就是幫我設定一個CNAME record，連到我之前開的github倉庫  
-但當時沒想到我會架這個blog，所以似乎沒存圖（找到圖再更新）
+就是幫我設定一個CNAME record，連到我之前開的github倉庫[ 傳送門](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/)  
+但當時沒想到我會架這個blog，所以似乎沒存圖
 
 然後我還設定了一個子域名，用的是A record  
 ```host```我填的是mc，這樣看起來就會像```mc.littlezhaidi.me```  
@@ -64,18 +65,18 @@ CNAME是```網域名稱```對應的```網域名稱```
 我在同一台電腦上開了兩台mc server，一個是之前有velocity的那個，另一個是臨時用的  
 我想給他綁到survival.littlezhaidi.me上面  
 所以我添加了一條新的A record  
+![alt](https://img.littlezhaidi.me/251108domain/a-record.webp)
 
 顯然是沒辦法處理port  
 所以我去問gpt，他說要多加一個RSV record，並且指定"_minecraft._tcp"作為服務名稱以及通訊協定
 
-長這樣
-
+長這樣  
+![alt](https://img.littlezhaidi.me/251108domain/rsv-record.webp)
 然後就好了👍
 
 ## 移轉 （25/11/08更新）
 
-為了把舊文全部搬到部落格上面，我把之前的文都看過了一次  
-發現這篇文有點過時了，因為我的name server現在換掉了  
+我發現這篇文有點過時了，因為我的name server現在換掉了  
 原因是我想要架圖床，到時候寫到圖床的時候再詳細說明  
 我會再回來插個傳送門
 
@@ -85,7 +86,8 @@ CNAME是```網域名稱```對應的```網域名稱```
 
 為了把name server交給cloudflare，要先去namecheap那裡調整  
 參考官方說明文件應該就夠了，我忘記當時我看的是什麼文章  
-但流程就那樣而已，沒我當初想像的複雜 [傳送門](https://www.namecheap.com/support/knowledgebase/article.aspx/9607/2210/how-to-set-up-dns-records-for-your-domain-in-a-cloudflare-account/)  
+但流程就那樣而已，沒我當初想像的複雜[ 傳送門](https://www.namecheap.com/support/knowledgebase/article.aspx/9607/2210/how-to-set-up-dns-records-for-your-domain-in-a-cloudflare-account/)  
+![alt](https://img.littlezhaidi.me/251108domain/namecheap.png)
 
 對了，cloudflare帳號註冊似乎需要信用卡，  
 但基本上免費服務已經非常夠用了，  
@@ -95,6 +97,7 @@ CNAME是```網域名稱```對應的```網域名稱```
 第一次進來很容易迷路，因為東西太多  
 但多逛幾次，你就知道哪些東西是你永遠不會用到的了  
 就比較不會迷路:)
+![alt](https://img.littlezhaidi.me/251108domain/cloudflare-dns.png)
 
 其實指示都滿清楚的，我覺得多說無益  
 畢竟那不是我的想法，沒必要記錄下來
@@ -103,7 +106,9 @@ CNAME是```網域名稱```對應的```網域名稱```
 關於SSL證書，這部分我幾乎沒概念  
 我只知道要啟用他，才有https安全連線  
 至於怎麼啟用，怎麼讓其他服務用上證書，那就是我目前的知識盲區了  
-但應該早晚會學到的
+但應該早晚會學到的  
+還有我記得那個RSV record設定似乎是不能用的，  
+但我目前不會用到它了，所以就不管
 
 
 
