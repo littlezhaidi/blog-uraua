@@ -1,5 +1,5 @@
 ---
-title: 在Unix上管理Java版本
+title: 使用SDKMAN!管理Java版本
 summary: 眾所周知，mc需要java才能啟動...
 created: 2026-02-16
 publish: 2026-02-16
