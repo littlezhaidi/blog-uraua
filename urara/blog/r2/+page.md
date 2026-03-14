@@ -46,7 +46,7 @@ tags:
 回收伏筆的時候到了，去看看 [搞個域名來玩玩](https://blog.littlezhaidi.me/domain/) 吧
 
 列出我的參考資料就好，這部分需要自己摸索  
-我參考的是這個影片，說明欄也有文章能看，可能會清楚一些
+我參考的是這個影片，說明欄也有文章能看，可能會清楚一些  
 我是沒遇到什麼大問題啦，就是域名轉移的時候，需要有點耐心而已  
 <script>
   import {YouTube} from 'sveltekit-embed'
